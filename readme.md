@@ -4,6 +4,6 @@
 
 **GUI**: Tkinter, Tkinter-designer (tool)
 **App**: Python, request library
-**API**: ZALO freeAPI, Django RESTFramework, Host: Heroku
+**API**: ZALO freeAPI, Django RESTFramework, Host: REPL.IT, UptimeRobot
 
 :ok_man: : **personal project by dapici**
