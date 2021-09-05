@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dacipi TTS</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet"> 
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <article class="container">
+        <h1>Chuyển Thể Văn Bản Thành Giọng Nói</h1>
+        <!-- <h2>Tạo bởi dacipi</h2>
+        <h2>Website viết bởi Nguyen Thanh Toan</h2> -->
+        <div class="input">
+            <div class="text-input">
+                <label for="text-input-field">
+                    Nhập văn bản bạn muốn được chuyển thành giọng nói
+                </label>
+                <textarea 
+                    id="text-input-field" 
+                    type="text"
+                    placeholder="tôi là Bình và tôi rất điếm thúi" 
+                    required 
+                ></textarea>
+            </div>
+        
+            <div class="control">
+                <label for="speed-slider">Tốc độ: <span id="speed-view">1</span></label>
+                <input type="range" id="speed-slider" 
+                min="8" max="12" value="10" step="1">
+
+                <label for="voice-type">Giọng nói</label>
+                <select id="voice-type">
+                    <option value="1">Nữ - miền Nam</option>
+                    <option value="2">Nữ - miền Bắc</option>
+                    <option value="3">Nam - miền Nam</option>
+                    <option value="4">Nam - miền Bắc</option>
+                </select>
+            </div>
+        
+            <div class="button">
+                <button id="play">Play</button>
+                <button id="download">Tải về</button>
+            </div>
+        </div>
+    </article>
+    <br><br>
+    <p id="audio-link"></p>
+</body>
+</html>
